@@ -16,7 +16,10 @@ let commentRoutes      = require("./routes/comments"),
     campgroundRoutes   = require("./routes/campground"),
     indexRoutes        = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/YelpCampV12", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/YelpCampV12", { useNewUrlParser: true });
+
+mongoose.connect("mongodb://dewaleolaoye:#Bolatito92@ds117111.mlab.com:17111/yelpcampwale", { useNewUrlParser: true });
+
 // app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 // It worked and this is how to declare it locally, I need to change it to Bootstrap 4
 app.use(bodyParser.urlencoded({extended: true}));
