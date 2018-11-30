@@ -1,5 +1,5 @@
 {
-  "name": "v1",
+  "name": "v12",
   "version": "1.0.0",
   "description": "YelpCamp v1",
   "main": "app.js",
@@ -8,7 +8,7 @@
     "start": "node app.js"
   
   },
-  "author": "Olaoye Adewale",
+  "author": "Olaoye Adewale Abiodun",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
