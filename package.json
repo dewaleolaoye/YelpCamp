@@ -8,7 +8,7 @@
     "start": "node app.js"
   
   },
-  "author": "Olaoye Adewale Abiodun",
+  "author": "Olaoye Adewale",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
