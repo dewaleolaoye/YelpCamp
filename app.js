@@ -21,7 +21,7 @@ let commentRoutes      = require("./routes/comments"),
 mongoose.connect("mongodb://dewaleolaoye:#Bolatito92@ds117111.mlab.com:17111/yelpcampwale", { useNewUrlParser: true });
 
 // app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
-// It worked and this is how to declare it locally, I need to change it to Bootstrap 4
+// this is how to declare it locally, I need to change it to Bootstrap 4
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
