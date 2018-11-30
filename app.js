@@ -1,6 +1,5 @@
 const express       = require("express"),
       app           = express(),
-      cookie        = require("cookie-session"),
       bodyParser    = require("body-parser"),
       mongoose      = require("mongoose"),
       flash         = require("connect-flash"),
@@ -22,7 +21,7 @@ let commentRoutes      = require("./routes/comments"),
 mongoose.connect("mongodb://dewaleolaoye:#Bolatito92@ds117111.mlab.com:17111/yelpcampwale", { useNewUrlParser: true });
 
 // app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
-// this is how to declare it locally, I need to change it to Bootstrap 4 okay
+// It worked and this is how to declare it locally, I need to change it to Bootstrap 4
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -33,7 +32,7 @@ app.use(flash());
 // seedDB(); // seed the database
 
 // PASSPORT CONFIGURATION
-app.use(require("cookie-session")({
+app.use(require("express-session")({
     secret: "Once again Rusty wins the best dog",
     resave: false,
     saveUninitialized: false
